@@ -1,0 +1,157 @@
+.main_Container_Appointment {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: url('../../assets/taller.png'), no-repeat;
+    background-size: cover;
+
+    .appointment_main {
+        width: 100vw;
+        height: 100vh;
+
+        .showContent {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+
+            .info_Package_Container {
+                width: 800px;
+                height: 600px;
+                box-shadow: 0 0 5px black;
+                border-radius: 20px;
+                display: grid;
+                grid-template-areas:
+                    'content content'
+                    'conditions conditions';
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50% 50%;
+                padding: 10px;
+                background: #ffffff60;
+                backdrop-filter: blur(10px);
+                row-gap: 2px;
+                
+
+                .info {
+                    box-shadow: 0 0 20px black;
+                    grid-area: content;
+                    border-radius: 10px 10px 0 0;
+
+                    .listDescription {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                        scrollbar-width: thin;
+
+                        .itemDescript {
+                            list-style-type: none;
+                            display: flex;
+                            align-items: center;
+                            user-select: none;
+
+                            .gunImageDes {
+                                width: 30px;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+
+                .imageTruck {
+                    grid-area: image;
+                    border-radius: 0 5px 0 0;
+                    display: flex;
+                    overflow: hidden;
+
+                    .containerCalendar{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        
+                    }
+
+                    .car_package {
+                        width: 90%;
+                    }
+                }
+
+                .condition {
+                    box-shadow: 0 0 20px black;
+                    grid-area: conditions;
+                    border-radius: 0 0 10px 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    p {
+                        width: 100%;
+                        height: auto;
+                        padding: 50px;
+                        text-align: center;
+
+                        .whtapp {
+                            width: 20px;
+                        }
+                    }
+
+                    .generate_appointment {
+                        width: fit-content;
+                        padding: 0 50px 0 50px;
+                        height: 40px;
+                        font-family: 'local';
+                        background: none;
+                        border-radius: 5px;
+                        border: 1px solid black;
+                        position: relative;
+                        overflow: hidden;
+                        transition: transform 0.2s linear;
+
+                        &::before{
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            background: rgb(55, 230, 253);
+                            z-index: -1;
+                            border-radius: 5px;
+                            transform: translateY(100%);
+                            opacity: 0.2;
+                            transition: all 0.2s linear;
+                        }
+                        &:hover::before{
+                            transform: translateY(0%);
+                            opacity: 1;
+                        }
+
+                        &:hover{
+                            transform: scale(1.03);
+                        }
+                        &:active{
+                            transform: scale(1);
+                        }
+                    }
+
+                }
+
+                .box {
+                    transition: transform 0.1s linear;
+                    padding: 5px;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+    }
+}
