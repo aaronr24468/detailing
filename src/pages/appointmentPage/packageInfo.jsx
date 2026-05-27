@@ -27,7 +27,9 @@ export const InfoPackage = ({ data, setState }) => {
 
             </div>
             <div className="condition box">
-                <p>El servicio solo esta disponible de sabado a domingo cualquier duda mandar mensaje a whatsapp dandole a la imagen de whatsapp <img className='whtapp' src={whatsapp} alt="" /></p>
+                <p>El servicio solo esta disponible de sabado a domingo cualquier duda mandar mensaje a whatsapp
+                     dandole a la imagen de whatsapp ademas de cualquier servicio extra comentarlo a la hora de
+                      reservar en whatsapp <img className='whtapp' src={whatsapp} alt="" /></p>
                 <button className='generate_appointment' onClick={() => agendar(packages)}>Agendar cita</button>
             </div>
         </section>

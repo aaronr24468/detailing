@@ -5,7 +5,6 @@ import logo from '../../assets/noback.webp';
 
 import { HeaderComponent } from '../../components/headerComponent';
 import { ActionButtons } from '../../components/actionButtons';
-import { Packages } from './packages';
 
 export const MainDetailing = ({ }) => {
 
@@ -26,12 +25,6 @@ export const MainDetailing = ({ }) => {
                         <div className="aboutDetailing">
                             <img className='imgLogo' src={logo} alt="" />
                         </div>
-
-                    </section>
-
-                    <section className='packages' id='Paquetes'>
-
-                        <Packages />
 
                     </section>
                 </main>

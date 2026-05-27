@@ -1,0 +1,146 @@
+.mainContainerServices {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+
+    .mainServices {
+        width: 100vw;
+        height: auto;
+        position: relative;
+
+
+
+        .packages {
+            width: 100vw;
+            height: 100vh;
+            /* background: url('../../assets/taller2.png'), no-repeat;
+            background-size: cover; */
+            background: rgb(143, 143, 143);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+            padding: 50px;
+
+            .package {
+                width: 400px;
+                height: 600px;
+                box-shadow: 0 0 10px rgb(0, 0, 0);
+                border-radius: 10px;
+                position: relative;
+                padding: 10px;
+                background: none;
+                backdrop-filter: blur(10px);
+                background: rgba(255, 255, 255, 0.63);
+
+                .imgPackage {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 300px;
+                    height: auto;
+                }
+
+                .containerList {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    padding: 100px 20px 5px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .lista {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .description {
+                            list-style-type: none;
+                            display: flex;
+                            justify-content: left;
+                            align-items: center;
+                            font-size: 0.9rem;
+
+                            .iconD {
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+
+                    .price {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        align-items: center;
+
+                        .priceContainer {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 20px;
+
+                            .total_Prices {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
+
+                        .btn_Appointment {
+                            width: 200px;
+                            height: 30px;
+                            background: rgb(255, 255, 255);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 10px;
+                            opacity: 0.5;
+                            transition: opacity 0.2s linear;
+
+
+                            .btn_Appointment_Package {
+                                width: 200px;
+                                height: 30px;
+                                border: none;
+                                text-align: center;
+                                font-size: 1.5rem;
+                                font-family: 'local';
+                                color: transparent;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                background-image: url(https://media.giphy.com/media/xULW8Fw2ZhznUptrYA/giphy.gif);
+                                background-size: cover;
+                                cursor: pointer;
+                            }
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+
+
+                    }
+                }
+
+            }
+
+        }
+
+
+        .extra_services {
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+}

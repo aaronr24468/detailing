@@ -33,7 +33,7 @@ const navigate = useNavigate();
                             </div>
                         </div>
                         <div className="btn_Appointment">
-                            <button className='btn_Appointment_Package' onClick={() => navigate(`/package/Básico`)}>Reservar paquete</button>
+                            <button className='btn_Appointment_Package' onClick={() => navigate(`/package/Básico`)}>Agregar paquete</button>
                         </div>
                     </section>
 
@@ -63,7 +63,7 @@ const navigate = useNavigate();
                             </div>
                         </div>
                         <div className="btn_Appointment">
-                            <button className='btn_Appointment_Package' onClick={() => navigate(`/package/Intermedio`)}>Reservar paquete</button>
+                            <button className='btn_Appointment_Package' onClick={() => navigate(`/package/Intermedio`)}>Agregar paquete</button>
                         </div>
                     </section>
                 </div>
@@ -92,7 +92,7 @@ const navigate = useNavigate();
                             </div>
                         </div>
                         <div className="btn_Appointment">
-                            <button className='btn_Appointment_Package' onClick={() => navigate(`/package/Premium`)}>Reservar paquete</button>
+                            <button className='btn_Appointment_Package' onClick={() => navigate(`/package/Premium`)}>Agregar paquete</button>
                         </div>
                         
                     </section>
