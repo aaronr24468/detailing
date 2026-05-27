@@ -12,6 +12,9 @@
     display: flex;
     padding: 50px 150px 50px 150px;
     gap: 20px;
+    z-index: 10000;
+    opacity: 0.3;
+    transition: all 0.4s linear;
 
     .infoBox{
         border-right: 3px solid black;
@@ -50,4 +53,5 @@
 .headerInfo[show="true"] {
     transform: translateY(0%);
     z-index: 10000;
+    opacity: 1;
 }

@@ -4,7 +4,6 @@ import intermedio from '../../assets/plus.webp'
 import premium from '../../assets/premium.webp';
 import whatsapp from '../../assets/whatsapp.svg'
 import { useParams } from 'react-router';
-import DatePicker from 'react-datepicker';
 import { agendar } from '../../functions/agendarCita';
 
 export const InfoPackage = ({ data, setState }) => {
