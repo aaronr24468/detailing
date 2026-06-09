@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     scrollbar-width: thin;
 
     .mainServices {
@@ -23,6 +23,7 @@
             justify-content: center;
             gap: 70px;
             padding: 50px;
+            position: relative;
 
             .package {
                 width: 400px;
@@ -135,12 +136,111 @@
 
             }
 
+            .extra_Selector{
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: 0;
+                font-family: 'local';
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: black;
+                transition: transform 0.2s linear;
+
+                .down_arrow{
+                    width: 50px;
+                    height: 50px;
+                }
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
         }
 
 
         .extra_services {
             width: 100vw;
             height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+            .packages_Selector{
+                width: fit-content;
+                height: auto;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                font-family: 'local';
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: black;
+                transition: transform 0.2s linear;
+
+                .up_arrow{
+                    width: 50px;
+                    height: 50px;
+                }
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+            .extras_Container{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                .extra_item{
+                    width: 300px;
+                    height: 250px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    box-shadow: 0 0 5px black;
+                    border-radius: 10px;
+                    transition: transform 0.2s linear;
+
+                    .extra_image{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index: 0;
+                        border-radius: 10px;
+                    }
+                    .des_extra{
+                        width: 100%;
+                        height: 50px;
+                        background: rgba(255, 255, 255, 0.514);
+                        position: absolute;
+                        z-index: 1000;
+                        bottom: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
         }
     }
 }
