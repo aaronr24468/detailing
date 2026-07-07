@@ -33,13 +33,13 @@ const navigate = useNavigate();
                             </div>
                         </div>
                         <div className="btn_Appointment">
-                            <button className='btn_Appointment_Package' onClick={() => navigate(`/package/Básico`)}>Agregar paquete</button>
+                            <button className='btn_Appointment_Package' onClick={() => navigate(`/package/Basico`)}>Agendar paquete</button>
                         </div>
                     </section>
 
                 </div>
             </div>
-            <div className="package">
+            {/* <div className="package">
                 <img className='imgPackage' src={plus} alt="" />
                 <div className="containerList">
                     <ul className='lista'>
@@ -97,7 +97,7 @@ const navigate = useNavigate();
                         
                     </section>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

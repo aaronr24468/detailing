@@ -6,7 +6,7 @@
     width: 40px;
     height: 40px;
     padding: 5px;
-    z-index: 10000;
+    z-index: 100000000;
     background: none;
     border-radius: 10px;
     border: 2px solid white;
@@ -26,6 +26,11 @@
 
     &:active {
         transform: scale(1);
+    }
+
+    @media (width <=450px) {
+        top: 10px;
+        right: 10px;
     }
 }
 
@@ -52,5 +57,12 @@
 
     &:active {
         transform: scale(1);
+    }
+
+    @media (width <=500px) {
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        bottom: 30px;
     }
 }

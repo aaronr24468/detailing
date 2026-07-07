@@ -13,7 +13,7 @@ export const useAppointment = () =>{
     const getDataPackage = async() =>{
         try {
             setLoading(true);
-            const path = `/v1/package/data/${packages}`;
+            const path = `/appointment/package/data/${packages}`;
             const info = await getPackage(path);
             setData(info.data)
         } catch (error) {

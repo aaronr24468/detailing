@@ -33,7 +33,7 @@
                 background: #ffffff60;
                 backdrop-filter: blur(10px);
                 row-gap: 2px;
-                
+
 
                 .info {
                     grid-area: content;
@@ -71,11 +71,11 @@
                     display: flex;
                     overflow: hidden;
 
-                    .containerCalendar{
+                    .containerCalendar {
                         width: 100%;
                         height: 100%;
                         display: flex;
-                        
+
                     }
 
                     .car_package {
@@ -100,6 +100,10 @@
                         .whtapp {
                             width: 20px;
                         }
+
+                        @media (width <=500px) {
+                            padding: 10px;
+                        }
                     }
 
                     .generate_appointment {
@@ -115,7 +119,7 @@
                         cursor: pointer;
                         transition: transform 0.2s linear;
 
-                        &::before{
+                        &::before {
                             content: '';
                             width: 100%;
                             height: 100%;
@@ -129,18 +133,22 @@
                             opacity: 0.2;
                             transition: all 0.2s linear;
                         }
-                        &:hover::before{
+
+                        &:hover::before {
                             transform: translateY(0%);
                             opacity: 1;
                         }
 
-                        &:hover{
+                        &:hover {
                             transform: scale(1.03);
                         }
-                        &:active{
+
+                        &:active {
                             transform: scale(1);
                         }
                     }
+
+
 
                 }
 
@@ -151,6 +159,16 @@
                     &:hover {
                         transform: scale(1.02);
                     }
+                }
+
+                @media (width <=900px) {
+                    width: 600px;
+                    height: 500px;
+                }
+
+                @media (width <=500px) {
+                    width: 350px;
+                    height: 650px;
                 }
             }
         }

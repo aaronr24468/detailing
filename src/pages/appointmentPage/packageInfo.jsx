@@ -9,13 +9,14 @@ import { agendar } from '../../functions/agendarCita';
 export const InfoPackage = ({ data, setState }) => {
   
     const { packages } = useParams();
+    
     return (
         <section className="info_Package_Container">
             <div className="info box">
                 <ul className="listDescription">
-                    {data.description_Package.map((element) => {
+                    {data.description_Package.map((element, index) => {
                         return (
-                            <li className="itemDescript"><img className='gunImageDes' src={gun} alt="" />{element}</li>
+                            <li key={index} className="itemDescript"><img className='gunImageDes' src={gun} alt="" />{element}</li>
                         )
                     })}
                 </ul>
