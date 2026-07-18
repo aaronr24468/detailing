@@ -9,7 +9,7 @@ export const useHeaderHook = () =>{
         const direction = tag.getAttribute('destination');
         console.log(direction)
         const urlActual = window.location.href;
-        urlActual != 'http://localhost:5173/'? (window.location.href = "http://localhost:5173/"):(document.getElementById(direction).scrollIntoView({behavior: 'smooth'}))
+        urlActual != 'https://waxonwaxoffdetailing.com.mx/'? (window.location.href = "https://waxonwaxoffdetailing.com.mx/"):(document.getElementById(direction).scrollIntoView({behavior: 'smooth'}))
     }
 
     return{
