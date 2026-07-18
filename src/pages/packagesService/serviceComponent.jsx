@@ -42,7 +42,7 @@ export const ServicePackagesComponent = ({}) =>{
                         </div>
                         <div className="extra_item">
                             <img className='extra_image' src={ceramic} alt="" />
-                            <span className='des_extra'>Cerámico: $2,000 - $2,500</span>
+                            <span className='des_extra'>Cerámico koch chemie: $3,500</span>
                         </div>
                         <div className="extra_item">
                             <img className='extra_image' src={extractor} alt="" />
@@ -50,8 +50,17 @@ export const ServicePackagesComponent = ({}) =>{
                         </div>
                         <div className="extra_item">
                             <img className='extra_image' src={polish} alt="" />
-                            <span className='des_extra'>Pulir pintura: $1,000</span>
+                            <span className='des_extra'>Pulir correcion de 1 paso: $1,500</span>
                         </div>
+                        <div className="extra_item">
+                            <img className='extra_image' src={polish} alt="" />
+                            <span className='des_extra'>Pulir correcion de 2 pasos: $2,800</span>
+                        </div>
+                        <div className="extra_item">
+                            <img className='extra_image' src={polish} alt="" />
+                            <span className='des_extra'>Pulir correcion de 3 pasos: $4,500</span>
+                        </div>
+
                     </div>
 
                 </section>

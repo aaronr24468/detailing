@@ -1,4 +1,4 @@
-const URL_PATH = `http://localhost:8181`
+const URL_PATH = `https://waxonwaxoffdetailing.com.mx`
 
 export const getPackage = async(path) =>{
     const data = await fetch(`${URL_PATH}${path}`,{

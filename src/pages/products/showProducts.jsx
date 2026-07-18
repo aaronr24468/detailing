@@ -7,8 +7,6 @@ import Koch_Chemie from '../../assets/Koch_Chemie.webp'
 export const ProductsList = ({}) =>{
     const hook = useGetListProducts();
 
-    console.log(hook.list)
-
     return(
         <div className="mainContainerProducts">
 
